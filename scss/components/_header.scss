@@ -1,0 +1,30 @@
+header {
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+height: 80px;
+
+  .navbar {
+    height: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+
+    &-brand {
+      margin-bottom: 0;
+    }
+
+    &-right {
+      justify-content: end;
+    }
+
+    &-nav {
+      .nav {
+        &-link {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
