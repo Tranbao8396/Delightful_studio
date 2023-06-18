@@ -1,3 +1,20 @@
-import Swiper, { Pagination, Navigation, Mousewheel, Parallax, Scrollbar, FreeMode } from "swiper";
-Swiper.use([Pagination, Navigation, Mousewheel, Parallax, Scrollbar, FreeMode]);
+import Swiper from 'swiper/bundle';
 
+var swiper_fv = document.querySelector(".swiper-fv");
+
+if (swiper_fv) {
+  const swiperFv = new Swiper(swiper_fv, {
+    speed: 2500,
+    effect: "fade",
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+      clickable: true
+    },
+  });
+}

@@ -4,25 +4,77 @@ top: 0;
 right: 0;
 left: 0;
 height: 80px;
+padding: 0 15px;
+color: #fff;
+z-index: 10;
+
+&:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.75) 0, transparent 100%);
+  content: "";
+}
 
   .navbar {
+    padding: 0;
     height: 100%;
     background-color: transparent;
     border-bottom: 1px solid #ccc;
     border-radius: 0;
 
     &-brand {
+      padding: 0;
       margin-bottom: 0;
+      
+      a {
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+
+        &:hover {
+          opacity: .8;
+        }
+      }
     }
 
     &-right {
       justify-content: end;
     }
 
+    &-btn-search {
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+
+      .icon {
+        &:after {
+          color: #fff;
+          font-size: 28px;
+        }
+      }
+    }
+
     &-nav {
       .nav {
         &-link {
-          padding: 0 10px;
+          color: #fff;
+          padding: 3px 10px !important;
+          opacity: .75;
+          transition: all .3s ease;
+
+          &.active {
+            color: #fff;
+            opacity: 1;
+            pointer-events: none;
+          }
+
+          &:hover {
+            opacity: .5;
+          }
         }
       }
     }
