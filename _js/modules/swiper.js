@@ -16,5 +16,32 @@ if (swiper_fv) {
       dynamicBullets: true,
       clickable: true
     },
+    on: {
+      slideChangeTransitionStart: function () {
+        $('.fv-lead').hide( "fade", { direction: "down" }, 500 );
+      },
+      slideChangeTransitionEnd: function () {
+        $('.fv-lead').show( "fade", { direction: "up" }, 500 );
+      },
+    } 
+  });
+}
+
+var swiper_image = document.querySelector(".swiper-about");
+
+if (swiper_image) {
+  const swiperImg = new Swiper(swiper_image, {
+    speed: 2500,
+    spaceBetween: 40,
+    slidesPerView: "auto",
+    centeredSlides: true,
+    // autoplay: {
+    //   delay: 3500,
+    //   disableOnInteraction: false,
+    // },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
   });
 }
