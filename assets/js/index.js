@@ -39,8 +39,19 @@ __webpack_require__.r(__webpack_exports__);
 /*!*******************************!*\
   !*** ./_js/modules/header.js ***!
   \*******************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+$(window).on("scroll", function() {
+  var scroll = $(this).scrollTop();
+  var fv_height = $("#fv").outerHeight();
+
+  if (scroll >= fv_height) {
+    $("header").addClass("is-white");
+  } else {
+    $("header").removeClass("is-white");
+  }
+});
 
 
 /***/ }),

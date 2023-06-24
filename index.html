@@ -27,11 +27,15 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Our Photos</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">Our Videos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Get In Touch</a>
                         </li>
                     </ul>
 
@@ -44,7 +48,7 @@
     </header>
     
     <div id="luxy">
-        <section class="section-fv">
+        <section class="section-fv" id="fv">
             <div class="swiper swiper-fv">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -74,9 +78,9 @@
 
         <section class="section-about">
             <div class="container">
-                <h1 class="section-title title-black-center">
+                <h2 class="section-title title-black text-center">
                     About Delightful
-                </h1>
+                </h2>
 
                 <p class="lead">
                     text text text text text text text text
@@ -126,19 +130,19 @@
             <div class="container">
                 <div class="d-flex media-parallax">
                     <div class="media-left flex-shrink-0 luxy-el" data-offset="200" data-speed-y="-5">
-                        <img src="./assets/images/fv-1.jpg" alt="" width="650">
+                        <img loading="lazy" src="./assets/images/fv-1.jpg" alt="" width="650">
                     </div>
 
                     <div class="media-body flex-grow-1">
-                        <h3 class="media-title">
+                        <h2 class="media-title title-black">
                             Photos
-                        </h3>
+                        </h2>
 
                         <p class="lead">
                             This is some content from a media component. You can replace this with any content and adjust it as needed.
                         </p>
 
-                        <a href="#" class="link-hover-dash">
+                        <a href="#" class="btn btn-hover-dash">
                             Read more
                         </a>
                     </div>
@@ -147,9 +151,9 @@
         </section>
 
         <section class="section-video-bg">
-            <div class="luxy-el" data-speed-y="-10" data-offset="500">
+            <div class="bg-video luxy-el" data-speed-y="-10" data-offset="400">
                 <div class="ratio ratio-21x9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tKbAd59ZfUo?controls=0&amp;start=1" frameborder="0" allowfullscreen></iframe>
+                    <video src="./assets/images/bg-video.mp4" class="object-fit-cover" autoplay muted></video>
                 </div>
             </div>
         </section>
@@ -158,23 +162,42 @@
             <div class="container">
                 <div class="d-flex media-parallax media-reverse">
                     <div class="media-left flex-shrink-0 luxy-el" data-offset="350" data-speed-y="-5">
-                        <img src="./assets/images/fv-2.jpg" alt="" width="650">
+                        <img loading="lazy" src="./assets/images/fv-2.jpg" alt="" width="650">
                     </div>
 
                     <div class="media-body flex-grow-1">
-                        <h3 class="media-title">
+                        <h2 class="media-title title-black">
                             Videos
-                        </h3>
+                        </h2>
 
                         <p class="lead">
                             This is some content from a media component. You can replace this with any content and adjust it as needed.
                         </p>
 
-                        <a href="#" class="link-hover-dash">
+                        <a href="#" class="btn btn-hover-dash">
                             Read more
                         </a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="section-get-in-touch">
+            <div class="bg-scroll luxy-el" data-offset="400" data-speed-y="-10"></div>
+            <div class="container">
+                <h2 class="section-title title-white">
+                    Get In Touch
+                </h2>
+
+                <p class="lead">
+                    text text text text text
+                    <br>
+                    text texst text text texst text text texst text 
+                </p>
+
+                <a href="#" class="btn btn-hover-dash btn-hover-dash-white">
+                    GET IN TOUCH
+                </a>
             </div>
         </section>
 

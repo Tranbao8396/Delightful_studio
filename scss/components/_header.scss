@@ -6,6 +6,8 @@ left: 0;
 padding: 0 15px;
 color: #fff;
 z-index: 10;
+background-color: transparent;
+transition: all .3s ease;
 
 &:before {
   position: absolute;
@@ -15,6 +17,7 @@ z-index: 10;
   left: 0;
   height: 100%;
   background: linear-gradient(180deg, rgba(0,0,0,0.75) 0, transparent 100%);
+  transition: all .3s ease;
   content: "";
 }
 
@@ -54,6 +57,7 @@ z-index: 10;
         &:after {
           color: #fff;
           font-size: 28px;
+          transition: all .3s ease;
         }
       }
     }
@@ -90,6 +94,42 @@ z-index: 10;
               transform: scaleX(1);
               transform-origin: bottom left;
             }
+          }
+        }
+      }
+    }
+  }
+
+  &.is-white {
+    background-color: #fff;
+
+    &:before {
+      opacity: 0;
+    }
+
+    .navbar {
+      border: 0;
+
+      &-brand {
+        a {
+          color: #000;
+        }
+      }
+
+      &-btn-search {
+        .icon {
+          &:after {
+            color: #000;
+          }
+        }
+      }
+
+      .nav {
+        &-link {
+          color: #000;
+
+          &:before {
+            background-color: #000;
           }
         }
       }
