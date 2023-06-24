@@ -69,8 +69,16 @@
   padding-bottom: 60px;
   height: 707px;
 
+  @include media-breakpoint-down(md) {
+    height: 340px;
+  }
+
   .swiper-slide {
     width: 970px;
+
+    @include media-breakpoint-down(md) {
+      width: 500px;
+    }
 
     img {
       width: 100%;

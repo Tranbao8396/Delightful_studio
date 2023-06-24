@@ -13233,8 +13233,18 @@ button.swiper-pagination-bullet {
   padding-bottom: 60px;
   height: 707px;
 }
+@media (max-width: 767.98px) {
+  .swiper-about {
+    height: 340px;
+  }
+}
 .swiper-about .swiper-slide {
   width: 970px;
+}
+@media (max-width: 767.98px) {
+  .swiper-about .swiper-slide {
+    width: 500px;
+  }
 }
 .swiper-about .swiper-slide img {
   width: 100%;
@@ -13383,6 +13393,11 @@ header.is-white .navbar .nav-link:before {
   text-align: center;
   color: #555;
   font-size: 20px;
+}
+@media (max-width: 767.98px) {
+  .section-about .lead {
+    font-size: 16px;
+  }
 }
 
 .section-parallax {
