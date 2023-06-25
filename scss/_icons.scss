@@ -10,4 +10,18 @@
       content: "\e8b6";
     }
   }
+
+  &-phone {
+    &:after {
+      display: inline-block;
+      content: "\e0b0";
+    }
+  }
+
+  &-address {
+    &:after {
+      display: inline-block;
+      content: "\e569";
+    }
+  }
 }

@@ -2,3 +2,11 @@
   max-width: 1980px;
   width: 100%;
 }
+
+.hover-img {
+  transition: all .3s ease;
+
+  &:hover {
+    opacity: .75;
+  }
+}
