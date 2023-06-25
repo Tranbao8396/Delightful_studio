@@ -13390,8 +13390,12 @@ header.is-white .navbar .nav-link:before {
 }
 
 footer {
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding: 100px 0 60px;
+}
+@media (max-width: 767.98px) {
+  footer {
+    padding: 50px 0 30px;
+  }
 }
 footer .title-footer {
   margin-bottom: 20px;
@@ -13420,10 +13424,15 @@ footer .list-address li {
   justify-content: flex-end;
   font-size: 14px;
 }
+@media (max-width: 767.98px) {
+  footer .list-address li {
+    justify-content: flex-start;
+  }
+}
 footer .list-address li .icon {
   margin-right: 3px;
 }
-footer .text-end small, footer .text-end .small {
+footer .text-md-end small, footer .text-md-end .small {
   font-size: 16px;
 }
 footer .text-center {
@@ -13443,6 +13452,11 @@ footer .text-center {
 .section-about {
   padding: 100px 0 70px;
 }
+@media (max-width: 767.98px) {
+  .section-about {
+    padding: 70px 0 40px;
+  }
+}
 .section-about .section-title {
   margin-bottom: 45px;
 }
@@ -13460,6 +13474,11 @@ footer .text-center {
 .section-parallax {
   padding: 100px 0;
 }
+@media (max-width: 767.98px) {
+  .section-parallax {
+    padding: 0 0 70px;
+  }
+}
 .section-parallax .container {
   max-width: 1200px;
 }
@@ -13468,6 +13487,11 @@ footer .text-center {
   padding: 14%;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 767.98px) {
+  .section-video-bg {
+    padding: 23%;
+  }
 }
 .section-video-bg .bg-video {
   position: absolute;
@@ -13501,9 +13525,28 @@ footer .text-center {
   margin-bottom: 40px;
 }
 
+@media (max-width: 767.98px) {
+  .media-cleared-md {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .media-cleared-md .media-reverse {
+    flex-direction: column-reverse !important;
+  }
+}
+
 .media-parallax .media-body {
+  position: relative;
   margin-top: 30px;
   margin-left: 50px;
+  z-index: 1;
+}
+@media (max-width: 767.98px) {
+  .media-parallax .media-left {
+    margin-left: -12px;
+    margin-right: 30px;
+  }
 }
 
 .media-reverse {
@@ -13514,6 +13557,12 @@ footer .text-center {
 }
 .media-reverse .media-left {
   margin-left: 50px;
+}
+@media (max-width: 767.98px) {
+  .media-reverse .media-left {
+    margin-right: -12px;
+    margin-left: 30px;
+  }
 }
 
 .btn-hover-dash {

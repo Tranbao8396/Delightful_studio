@@ -1,6 +1,10 @@
 .section-about {
   padding: 100px 0 70px;
 
+  @include media-breakpoint-down(md) {
+    padding: 70px 0 40px;
+  }
+
   .section-title {
     margin-bottom: 45px;
   }
@@ -19,6 +23,10 @@
 .section-parallax {
   padding: 100px 0;
 
+  @include media-breakpoint-down(md) {
+    padding: 0 0 70px;
+  }
+
   .container {
     max-width: 1200px;
   }
@@ -28,6 +36,10 @@
   padding: 14%;
   position: relative;
   overflow: hidden;
+
+  @include media-breakpoint-down(md) {
+    padding: 23%;
+  }
 
   .bg-video {
     position: absolute;
