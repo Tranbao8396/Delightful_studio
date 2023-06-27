@@ -1,11 +1,11 @@
 .media-cleared {
   &-md {
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       flex-direction: column !important;
     }
 
     .media-reverse {
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         flex-direction: column-reverse !important;
       }
     }
@@ -21,7 +21,7 @@
   }
 
   .media-left {
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       margin-left: -12px;
       margin-right: 30px;
     }
@@ -38,9 +38,10 @@
   .media-left {
     margin-left: 50px;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       margin-right: -12px;
       margin-left: 30px;
+      text-align: end;
     }
   }
 }

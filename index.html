@@ -16,7 +16,9 @@
                     <a href="#">Delightful Studio</a>
                 </h1>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -39,14 +41,14 @@
                         </li>
                     </ul>
 
-                    <button class="btn navbar-btn-search">
+                    <button class="btn navbar-btn-search" data-bs-toggle="modal" data-bs-target="#modal-search">
                         <span class="icon icon-search"></span>
                     </button>
                 </div>
             </div>
         </nav>
     </header>
-    
+
     <div id="luxy">
         <section class="section-fv" id="fv">
             <div class="swiper swiper-fv">
@@ -192,7 +194,7 @@
                 <p class="lead mb-5">
                     text text text text text
                     <br>
-                    text texst text text texst text text texst text 
+                    text texst text text texst text text texst text
                 </p>
 
                 <a href="#" class="btn btn-hover-dash btn-hover-dash-white">
@@ -266,6 +268,19 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <div id="modal-search" class="modal fade modal-simple" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./assets/js/index.js"></script>
 </body>
