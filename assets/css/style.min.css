@@ -13506,6 +13506,19 @@ footer .text-center {
   color: #fff;
 }
 
+.title-common {
+  margin-bottom: 80px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+@media (max-width: 767.98px) {
+  .title-common {
+    font-size: 25px;
+  }
+}
+
 .section-about {
   padding: 100px 0 70px;
 }
@@ -13592,6 +13605,12 @@ footer .text-center {
   height: 100vh;
   isolation: isolate;
 }
+@media (max-width: 767.98px) {
+  .section-page-header .inner {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 .section-page-header:before {
   position: absolute;
   top: 0;
@@ -13626,6 +13645,51 @@ footer .text-center {
     margin-top: 20px;
     font-size: 20px;
   }
+}
+
+.section-img-col {
+  padding-top: 100px;
+}
+.section-img-col .card-hover {
+  --bs-border-radius: 25px;
+  position: relative;
+  margin-bottom: 30px;
+  color: #000;
+}
+.section-img-col .card-hover:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+  content: "";
+}
+.section-img-col .card-hover:hover .text-hover {
+  opacity: 1;
+}
+.section-img-col .card-hover:hover:before {
+  opacity: 1;
+}
+.section-img-col .text-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 35px;
+  font-size: 20px;
+  color: #fff;
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+}
+.section-img-col .text-hover .name {
+  font-size: 26px;
+  font-weight: bold;
+}
+.section-img-col .text-hover .date {
+  font-size: 16px;
 }
 
 @media (max-width: 991.98px) {
