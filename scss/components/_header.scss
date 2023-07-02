@@ -123,6 +123,10 @@ transition: all .3s ease;
     }
 
     &-nav {
+      @include media-breakpoint-down(md) {
+        margin-top: 20px;
+      }
+
       .nav {
         &-link {
           position: relative;
@@ -130,6 +134,10 @@ transition: all .3s ease;
           margin: 0 10px;
           color: #fff;
           opacity: .75;
+
+          @include media-breakpoint-down(md) {
+            margin: 0;
+          }
 
           &:before {
             position: absolute;
