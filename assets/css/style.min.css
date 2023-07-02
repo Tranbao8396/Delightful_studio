@@ -13692,6 +13692,31 @@ footer .text-center {
   font-size: 16px;
 }
 
+.modal-search .modal-dialog {
+  margin-top: 20vh;
+}
+.modal-search .modal-content {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+}
+.modal-search .modal-content .form-search input {
+  padding: 5px 0;
+  width: 100%;
+  background-color: transparent;
+  font-size: 16px;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.modal-search .modal-content .form-search input:focus {
+  box-shadow: none;
+}
+.modal-search .modal-content .form-search input::placeholder {
+  color: #ddd;
+}
+
 @media (max-width: 991.98px) {
   .media-cleared-md {
     flex-direction: column !important;
