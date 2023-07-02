@@ -13273,6 +13273,17 @@ button.swiper-pagination-bullet {
   background-color: #000;
 }
 
+@media (min-width: 1400px) {
+  .row-20 {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  .row-20 > div,
+  .row-20 > li {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
 .container {
   max-width: 1400px;
   width: 100%;
@@ -13525,6 +13536,7 @@ footer .text-center {
 }
 @media (max-width: 767.98px) {
   .title-common {
+    margin-bottom: 45px;
     font-size: 25px;
   }
 }
@@ -13659,12 +13671,29 @@ footer .text-center {
 
 .section-img-col {
   padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 767.98px) {
+  .section-img-col {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
 }
 .section-img-col .card-hover {
   --bs-border-radius: 25px;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   color: #000;
+}
+@media (max-width: 767.98px) {
+  .section-img-col .card-hover {
+    --bs-border-radius: 15px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .section-img-col .card-hover {
+    margin-bottom: 24px;
+  }
 }
 .section-img-col .card-hover:before {
   position: absolute;
@@ -13677,6 +13706,11 @@ footer .text-center {
   opacity: 0;
   transition: 0.3s all ease-in-out;
   content: "";
+}
+@media (max-width: 767.98px) {
+  .section-img-col .card-hover:before {
+    font-size: 15px;
+  }
 }
 .section-img-col .card-hover:hover .text-hover {
   opacity: 1;
@@ -13694,12 +13728,28 @@ footer .text-center {
   opacity: 0;
   transition: 0.3s all ease-in-out;
 }
+@media (max-width: 767.98px) {
+  .section-img-col .text-hover {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}
 .section-img-col .text-hover .name {
   font-size: 26px;
   font-weight: bold;
 }
+@media (max-width: 767.98px) {
+  .section-img-col .text-hover .name {
+    font-size: 20px;
+  }
+}
 .section-img-col .text-hover .date {
   font-size: 16px;
+}
+@media (max-width: 767.98px) {
+  .section-img-col .text-hover .date {
+    font-size: 13px;
+  }
 }
 
 .modal-search .modal-dialog {
@@ -13812,5 +13862,63 @@ footer .text-center {
 }
 .btn-hover-dash-white:hover {
   color: #fff;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.btn-load-more {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 190px;
+  height: 190px;
+  margin-inline: auto;
+  margin-top: 50px;
+  font-size: 20px;
+  color: #000;
+  border-radius: 50%;
+  transition: 0.3s all ease;
+}
+@media (max-width: 767.98px) {
+  .btn-load-more {
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+  }
+}
+.btn-load-more:hover {
+  opacity: 0.8;
+}
+.btn-load-more .spin-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 4px solid #000;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
+}
+.btn-load-more .spin-circle:before {
+  position: absolute;
+  top: -11px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  outline: 2px solid #e9e9e9;
+  background-color: #fff;
+  content: "";
 }
 /*# sourceMappingURL=style.min.css.map */

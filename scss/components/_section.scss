@@ -134,13 +134,27 @@
 // ----------------------------------------------
 .section-img-col {
   padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
 
   .card-hover {
     --bs-border-radius: 25px;
 
+    @include media-breakpoint-down(md) {
+      --bs-border-radius: 15px;
+    }
+
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: #000;
+
+    @include media-breakpoint-down(xxl) {
+      margin-bottom: 24px;
+    }
 
     &:before {
       position: absolute;
@@ -153,6 +167,10 @@
       opacity: 0;
       transition: .3s all ease-in-out;
       content: "";
+
+      @include media-breakpoint-down(md) {
+        font-size: 15px;
+      }
     }
 
     &:hover {
@@ -176,13 +194,26 @@
     opacity: 0;
     transition: .3s all ease-in-out;
 
+    @include media-breakpoint-down(md) {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+
     .name {
       font-size: 26px;
       font-weight: bold;
+
+      @include media-breakpoint-down(md) {
+        font-size: 20px;
+      }
     }
 
     .date {
       font-size: 16px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 13px;
+      }
     }
   }
 }

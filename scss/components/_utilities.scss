@@ -1,3 +1,23 @@
+// ----------------------------------------------
+@mixin row-variant($parent, $grid-gutter-width) {
+  #{$parent} {
+    margin-right: -$grid-gutter-width;
+    margin-left: -$grid-gutter-width;
+
+    > div,
+    > li {
+      padding-right: $grid-gutter-width;
+      padding-left: $grid-gutter-width;
+    }
+  }
+}
+
+// ----------------------------------------------
+@include media-breakpoint-up(xxl) {
+  @include row-variant(".row-20", 20px);
+}
+
+
 .container {
   max-width: 1400px;
   width: 100%;
