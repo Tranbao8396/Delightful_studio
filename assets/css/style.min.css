@@ -13605,6 +13605,11 @@ footer .text-center {
   font-size: 48px;
   font-weight: bold;
 }
+@media (max-width: 767.98px) {
+  .section-page-header .title {
+    font-size: 35px;
+  }
+}
 .section-page-header .title,
 .section-page-header .title small,
 .section-page-header .title .small {
@@ -13615,6 +13620,12 @@ footer .text-center {
   margin-top: 30px;
   font-size: 32px;
   font-weight: 500;
+}
+@media (max-width: 767.98px) {
+  .section-page-header .title small, .section-page-header .title .small {
+    margin-top: 20px;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 991.98px) {

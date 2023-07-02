@@ -68,7 +68,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var luxy_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(luxy_js__WEBPACK_IMPORTED_MODULE_0__);
 
 
-luxy_js__WEBPACK_IMPORTED_MODULE_0___default().init();
+if (document.getElementById('luxy')) {
+  luxy_js__WEBPACK_IMPORTED_MODULE_0___default().init();
+}
 
 
 /***/ }),

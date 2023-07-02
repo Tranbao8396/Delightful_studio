@@ -1,3 +1,5 @@
 import luxy from "luxy.js";
 
-luxy.init();
+if (document.getElementById('luxy')) {
+  luxy.init();
+}
