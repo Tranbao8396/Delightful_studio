@@ -13285,6 +13285,11 @@ button.swiper-pagination-bullet {
   opacity: 0.75;
 }
 
+.bg-photo {
+  background: url("../images/common/bg-photo.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -13575,6 +13580,41 @@ footer .text-center {
 }
 .section-get-in-touch .section-title {
   margin-bottom: 40px;
+}
+
+.section-page-header {
+  position: relative;
+  color: #fff;
+}
+.section-page-header .inner {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  isolation: isolate;
+}
+.section-page-header:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  content: "";
+}
+.section-page-header .title {
+  font-size: 48px;
+  font-weight: bold;
+}
+.section-page-header .title,
+.section-page-header .title small,
+.section-page-header .title .small {
+  color: #fff;
+}
+.section-page-header .title small, .section-page-header .title .small {
+  display: block;
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: 500;
 }
 
 @media (max-width: 991.98px) {

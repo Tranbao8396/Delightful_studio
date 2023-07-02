@@ -10,3 +10,9 @@
     opacity: .75;
   }
 }
+
+// ----------------------------------------------
+.bg-photo {
+  background: url("../images/common/bg-photo.png") 50% 50% no-repeat;
+  background-size: cover;
+}
