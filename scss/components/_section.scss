@@ -231,6 +231,36 @@
     padding-top: 60px;
   }
 
+  .d-flex-img {
+    flex-direction: row-reverse;
+    font-size: 20px;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      font-size: 18px;
+    }
+
+    .img-lg {
+      @include media-breakpoint-between(md,xl) {
+        width: 52vw;
+      }
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+
+    .body {
+      @include media-breakpoint-up(md) {
+        padding-right: 30px;
+      }
+
+      @include media-breakpoint-down(md) {
+        padding-top: 25px;
+      }
+    }
+  }
+
   .post-info {
     margin-bottom: 50px;
 
