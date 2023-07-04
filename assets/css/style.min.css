@@ -13475,6 +13475,19 @@ footer {
     padding: 50px 0 30px;
   }
 }
+footer .container {
+  position: relative;
+}
+footer .container:before {
+  position: absolute;
+  top: -102px;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 5px;
+  content: "";
+}
 footer .title-footer {
   margin-bottom: 20px;
   line-height: 1.4;
