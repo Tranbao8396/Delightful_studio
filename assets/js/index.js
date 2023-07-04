@@ -75,27 +75,6 @@ if (document.getElementById('luxy')) {
 
 /***/ }),
 
-/***/ "./_js/modules/masonry.js":
-/*!********************************!*\
-  !*** ./_js/modules/masonry.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-Object(function webpackMissingModule() { var e = new Error("Cannot find module 'masonry-layout'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-
-
-$('.grid').masonry({
-  // options
-  itemSelector: '.grid-item',
-  columnWidth: 200
-});
-
-
-/***/ }),
-
 /***/ "./_js/modules/swiper.js":
 /*!*******************************!*\
   !*** ./_js/modules/swiper.js ***!
@@ -48155,7 +48134,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/header */ "./_js/modules/header.js");
 /* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_header__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _modules_swiper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/swiper */ "./_js/modules/swiper.js");
-/* harmony import */ var _modules_masonry__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/masonry */ "./_js/modules/masonry.js");
 
 
 
@@ -48163,7 +48141,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+// import "./modules/masonry";
 
 })();
 
