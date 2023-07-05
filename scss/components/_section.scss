@@ -173,6 +173,34 @@
       }
     }
 
+    &-video {
+      &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        font-family: "Material Symbols Outlined";
+        content: "\e1c4";
+        margin: auto;
+        font-size: 60px;
+        width: 60px;
+        height: 100px;
+        color: #fff;
+        opacity: 0;
+        transition: all .3s ease;
+        visibility: hidden;
+      }
+
+      &:hover {
+        &:after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+
     &:hover {
       .text-hover {
         opacity: 1;

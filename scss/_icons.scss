@@ -24,4 +24,11 @@
       content: "\e569";
     }
   }
+
+  &-play {
+    &:after {
+      display: inline-block;
+      content: "\e1c4";
+    }
+  }
 }

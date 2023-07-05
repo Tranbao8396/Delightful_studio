@@ -11892,6 +11892,10 @@ a {
   display: inline-block;
   content: "\e569";
 }
+.icon-play:after {
+  display: inline-block;
+  content: "\e1c4";
+}
 
 body[data-aos-duration="50"] [data-aos], [data-aos][data-aos][data-aos-duration="50"] {
   transition-duration: 50ms;
@@ -13724,6 +13728,27 @@ footer .text-center {
   .section-img-col .card-hover:before {
     font-size: 15px;
   }
+}
+.section-img-col .card-hover-video:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: "Material Symbols Outlined";
+  content: "\e1c4";
+  margin: auto;
+  font-size: 60px;
+  width: 60px;
+  height: 100px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+.section-img-col .card-hover-video:hover:after {
+  opacity: 1;
+  visibility: visible;
 }
 .section-img-col .card-hover:hover .text-hover {
   opacity: 1;
