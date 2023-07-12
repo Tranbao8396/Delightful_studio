@@ -1,0 +1,41 @@
+.form-contact {
+  padding: 100px 100px 100px 20px;
+  background-color: #fff;
+  border-radius: 0 150px 0 0;
+  box-shadow: 10px 10px 40px 5px rgba(0, 0, 0, .25);
+  max-width: 800px;
+  width: 100%;
+
+  @include media-breakpoint-down(md) {
+    padding: 50px 15px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .form-group {
+    margin-bottom: 30px;
+
+    .form-control {
+      border-radius: 0;
+      border: 0;
+      border-bottom: 1px solid #000;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    textarea {
+      border-left: 1px solid #000 !important;
+    }
+  }
+
+  .btn-container {
+    margin-top: 20px;
+
+    .btn {
+      font-style: italic;
+      font-size: 20px;
+    }
+  }
+}
